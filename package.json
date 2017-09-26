@@ -1,0 +1,19 @@
+{
+  "name": "react-walkthrough",
+  "version": "0.0.1",
+  "description": "A react walkthrough",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "keywords": [
+    "react",
+    "walkthrough"
+  ],
+  "author": "Nestor Diaz <jhoanny.loaiza@gmail.com> (http://twitter.com/jhoannyDiaz)",
+  "license": "MIT",
+  "dependencies": {
+    "react": "15.6.2",
+    "react-dom": "15.6.2"
+  }
+}
