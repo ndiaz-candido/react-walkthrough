@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>JSX</title>
+    <title>Functional and Class Components</title>
   </head>
   <body>
     <div id="react-app"></div>
@@ -12,18 +12,14 @@
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
     <script type="text/babel">
-      function tick() {
-        var rootElement =
-          <h1 style={{ color: "green", backgroundColor: "black" }} >
-            <span>{ new Date().toLocaleTimeString() }</span>
-          </h1>;
-
-        // ReactDOM.render(reactElement, domContainerNode)
-        ReactDOM.render(rootElement, document.getElementById('react-app'));
+      // Functional component.
+      function Welcome(props) {
+        return <h1>Hello, {props.name}</h1>;
       }
 
-      // Calls tick every second.
-      setInterval(tick, 1000);
+      const element = <Welcome name="Sara" />;
+
+      ReactDOM.render(element, document.getElementById('react-app'));
     </script>
   </body>
 </html>
