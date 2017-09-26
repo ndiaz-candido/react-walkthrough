@@ -2,20 +2,21 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Updating the Rendered Element</title>
+    <title>JSX</title>
   </head>
   <body>
     <div id="react-app"></div>
 
     <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react.js"></script>
     <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
+    <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
-    <script>
+    <script type="text/babel">
       function tick() {
-        // React.createElement(types, props, children)
         var rootElement =
-          React.createElement('h1', { style: { color: "green", backgroundColor: "black" }}, 
-            React.createElement("span", {}, new Date().toLocaleTimeString()));
+          <h1 style={{ color: "green", backgroundColor: "black" }} >
+            <span>{ new Date().toLocaleTimeString() }</span>
+          </h1>;
 
         // ReactDOM.render(reactElement, domContainerNode)
         ReactDOM.render(rootElement, document.getElementById('react-app'));
