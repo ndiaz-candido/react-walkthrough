@@ -12,9 +12,11 @@
     <script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
 
     <script type="text/babel">
-      // Functional component.
-      function Welcome(props) {
-        return <h1>Hello, {props.name}</h1>;
+      // Class component.
+      class Welcome extends React.Component {
+        render() {
+          return <h1>Hello, {this.props.name}</h1>;
+        }
       }
 
       const element = <Welcome name="Sara" />;
