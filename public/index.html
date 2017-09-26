@@ -13,7 +13,8 @@
     <script>
       // React.createElement(types, props, children)
       var rootElement =
-        React.createElement('h1', { style: { color: "green", backgroundColor: "black" }}, "Hello World");
+        React.createElement('h1', { style: { color: "green", backgroundColor: "black" }}, 
+          React.createElement("span", {}, "Hello World"));
 
       // ReactDOM.render(reactElement, domContainerNode)
       ReactDOM.render(rootElement, document.getElementById('react-app'));
