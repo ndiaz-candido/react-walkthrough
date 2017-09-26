@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <title>Hello world</title>
+    <title>Updating the Rendered Element</title>
   </head>
   <body>
     <div id="react-app"></div>
@@ -11,13 +11,18 @@
     <script src="https://cdn.jsdelivr.net/react/0.14.0-rc1/react-dom.js"></script>
 
     <script>
-      // React.createElement(types, props, children)
-      var rootElement =
-        React.createElement('h1', { style: { color: "green", backgroundColor: "black" }}, 
-          React.createElement("span", {}, "Hello World"));
+      function tick() {
+        // React.createElement(types, props, children)
+        var rootElement =
+          React.createElement('h1', { style: { color: "green", backgroundColor: "black" }}, 
+            React.createElement("span", {}, new Date().toLocaleTimeString()));
 
-      // ReactDOM.render(reactElement, domContainerNode)
-      ReactDOM.render(rootElement, document.getElementById('react-app'));
+        // ReactDOM.render(reactElement, domContainerNode)
+        ReactDOM.render(rootElement, document.getElementById('react-app'));
+      }
+
+      // Calls tick every second.
+      setInterval(tick, 1000);
     </script>
   </body>
 </html>
