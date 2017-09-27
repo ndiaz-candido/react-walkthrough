@@ -1,4 +1,6 @@
+import React from 'react';
 import Comment from './components/comment';
+import Welcome from './components/welcome';
 
 export default function App() {
   const comment = {

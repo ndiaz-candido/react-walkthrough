@@ -1,3 +1,4 @@
+import React from 'react';
 import UserInfo from './userinfo';
 
 export default function Comment(props) {
