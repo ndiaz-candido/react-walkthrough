@@ -5,7 +5,7 @@ import App from './app';
 const render = () => {
   ReactDOM.render(
     <App />,
-    document.getElementById('root')
+    document.getElementById('react-app')
   );
 };
 
