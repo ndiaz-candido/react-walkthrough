@@ -4,7 +4,8 @@
   "description": "A react walkthrough",
   "main": "index.js",
   "scripts": {
-    "test": ""
+    "test": "",
+    "build": "babel src -d lib"
   },
   "keywords": [
     "react",
@@ -15,5 +16,10 @@
   "dependencies": {
     "react": "15.6.2",
     "react-dom": "15.6.2"
+  },
+  "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-env": "1.6.0",
+    "babel-preset-react": "6.24.1"
   }
 }
