@@ -1,6 +1,7 @@
 import React from 'react';
 import Comment from './components/comment';
 import Welcome from './components/welcome';
+import Clock from './components/clock';
 
 export default function App() {
   const comment = {
@@ -16,8 +17,7 @@ export default function App() {
     <div>
       <Comment date={comment.date} text={comment.text} author={comment.author} />
       <Welcome name="Sara" />
-      <Welcome name="Cahal" />
-      <Welcome name="Edite" />
+      <Clock />
     </div>
   );
 }
