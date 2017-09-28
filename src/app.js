@@ -2,6 +2,7 @@ import React from 'react';
 import Comment from './components/comment';
 import Welcome from './components/welcome';
 import Clock from './components/clock';
+import Toggle from './components/toggle';
 
 export default function App() {
   const comment = {
@@ -18,6 +19,7 @@ export default function App() {
       <Comment date={comment.date} text={comment.text} author={comment.author} />
       <Welcome name="Sara" />
       <Clock />
+      <Toggle />
     </div>
   );
 }
