@@ -3,6 +3,7 @@ import Comment from './components/comment';
 import Welcome from './components/welcome';
 import Clock from './components/clock';
 import Toggle from './components/toggle';
+import LoginControl from './components/loginControl';
 
 export default function App() {
   const comment = {
@@ -20,6 +21,7 @@ export default function App() {
       <Welcome name="Sara" />
       <Clock />
       <Toggle />
+      <LoginControl />
     </div>
   );
 }
