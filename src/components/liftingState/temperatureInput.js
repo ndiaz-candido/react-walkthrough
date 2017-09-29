@@ -13,12 +13,11 @@ export default class TemperatureInput extends React.Component {
   }
 
   handleChange(e) {
-    this.setState({temperature: e.target.value});
+    this.props.onTempetureChange(e.target.value);
   }
 
   render() {
-    const temperature = this.state.temperature;
-    const scale = this.props.scale;
+    const { temperature, scale } = this.props;
 
     return (
       <fieldset>
