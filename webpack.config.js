@@ -1,4 +1,5 @@
 const path = require('path');
+const postCssPlugins = require('./postcss.plugins');
 
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const HtmlWebpackPluginConfig = new HtmlWebpackPlugin({
@@ -22,6 +23,26 @@ module.exports = {
         query: {
           presets: ['env', 'react']
         }
+      },
+      {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          {
+            loader: 'css-loader',
+            options: {
+              localIdentName: '[name]__[local]__[hash:base64:5]',
+              camelCase: true,
+              module: true
+            },
+          },
+          {
+            loader: 'postcss-loader',
+            options: {
+              plugins: () => postCssPlugins
+            }
+          }
+        ]
       }
     ]
   },

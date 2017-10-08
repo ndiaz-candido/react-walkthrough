@@ -5,7 +5,7 @@ import Clock from './components/clock';
 import Toggle from './components/toggle';
 import LoginControl from './components/loginControl';
 import UserList from './components/userList';
-import Calculator from './components/liftingState/calculator';
+import Calculator from './components/LiftingState/Calculator';
 
 export default function App() {
   const comment = {

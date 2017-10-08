@@ -1,8 +1,8 @@
-import React from 'react';
-import TemperatureInput from './temperatureInput';
-import BoilerVerdict from './boilerVerdict';
+import React, { Component } from 'react';
+import TemperatureInput from './TemperatureInput';
+import BoilerVerdict from './BoilerVerdict';
 
-export default class Calculator extends React.Component {
+export default class Calculator extends Component {
   constructor(props) {
     super(props);
     this.handleCelsiusChange = this.handleCelsiusChange.bind(this);
